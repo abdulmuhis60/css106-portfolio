@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Abdulmuhis Saheed - Student Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Abdulmuhis Saheed</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">&#9776;</button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html" class="active">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Academic Planner</h1>
+
+    <section class="planner">
+      <form id="taskForm" class="task-form">
+        <input type="text" id="taskInput" placeholder="Enter a new task, e.g. Submit COS 106 project">
+        <input type="date" id="taskDate">
+        <button type="submit" class="btn">Add Task</button>
+      </form>
+      <p id="taskError" class="error"></p>
+
+      <p id="taskCount" class="task-count"></p>
+
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Abdulmuhis Saheed. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

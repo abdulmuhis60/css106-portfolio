@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Abdulmuhis Saheed - Student Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Abdulmuhis Saheed</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">&#9776;</button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Contact Me</h1>
+
+    <section class="contact-wrapper">
+      <form id="contactForm" class="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email">
+        <span class="error" id="emailError"></span>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+        <span class="error" id="phoneError"></span>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <span class="error" id="messageError"></span>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formSuccess" class="success"></p>
+      </form>
+
+      <aside class="contact-info">
+        <h2>Other Ways to Reach Me</h2>
+        <ul>
+          <li>Email: <a href="mailto:abdulmuhis60@gmail.com">abdulmuhis60@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/abdulmuhis60" target="_blank">github.com/abdulmuhis60</a></li>
+          <li>Location: Osun State, Nigeria</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Abdulmuhis Saheed. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
